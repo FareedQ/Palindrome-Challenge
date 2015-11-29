@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Palindrome_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGh-0e-VJf" userLabel="titleView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palindrome Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ABF-66-UfG">
+                                        <rect key="frame" x="120" y="46" width="360" height="70"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="358" id="hok-yB-Xpd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
+                                        <color key="textColor" red="0.93433493589743588" green="0.87226272054022569" blue="0.41381748099138949" alpha="0.59175646551724137" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hok-yB-Xpd"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.36470588240000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ABF-66-UfG" firstAttribute="width" secondItem="xGh-0e-VJf" secondAttribute="width" multiplier="0.6" id="5Xg-t4-rNY"/>
+                                    <constraint firstItem="ABF-66-UfG" firstAttribute="bottom" secondItem="xGh-0e-VJf" secondAttribute="bottomMargin" id="JWi-Da-reC"/>
+                                    <constraint firstItem="ABF-66-UfG" firstAttribute="centerY" secondItem="xGh-0e-VJf" secondAttribute="centerY" constant="19" id="Jh2-AS-aED"/>
+                                    <constraint firstItem="ABF-66-UfG" firstAttribute="centerX" secondItem="xGh-0e-VJf" secondAttribute="centerX" id="qzY-7z-UqE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cc-FG-uZv" userLabel="contentView">
+                                <rect key="frame" x="0.0" y="123" width="600" height="477"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0oB-NO-2U8">
+                                        <rect key="frame" x="8" y="53" width="584" height="30"/>
+                                        <animations/>
+                                        <color key="textColor" red="0.48627450979999998" green="0.4549019608" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onW-ld-bjk">
+                                        <rect key="frame" x="8" y="8" width="584" height="37"/>
+                                        <animations/>
+                                        <string key="text">This application will find the longest palindrome word in a scentence. A palindrome is a word that is spelled the same forwards and backwards.</string>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <color key="textColor" red="0.48627450980392156" green="0.45490196078431372" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB6-Xb-sv2">
+                                        <rect key="frame" x="262" y="91" width="76" height="50"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" red="0.48627450979999998" green="0.4549019608" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnResults:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOC-1n-f8D"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MO-aK-hgc">
+                                        <rect key="frame" x="8" y="149" width="584" height="0.0"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <color key="textColor" red="0.48627450979999998" green="0.4549019608" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93433493590000005" green="0.87226272049999998" blue="0.41381748099999999" alpha="0.59175646550000005" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0oB-NO-2U8" secondAttribute="trailing" constant="8" id="2rX-W3-igR"/>
+                                    <constraint firstItem="0oB-NO-2U8" firstAttribute="leading" secondItem="6Cc-FG-uZv" secondAttribute="leading" constant="8" id="48K-qC-GqV"/>
+                                    <constraint firstItem="gB6-Xb-sv2" firstAttribute="centerX" secondItem="6Cc-FG-uZv" secondAttribute="centerX" id="55y-SK-06F"/>
+                                    <constraint firstItem="onW-ld-bjk" firstAttribute="top" secondItem="6Cc-FG-uZv" secondAttribute="top" constant="8" id="DAS-HX-eo3"/>
+                                    <constraint firstItem="6MO-aK-hgc" firstAttribute="leading" secondItem="6Cc-FG-uZv" secondAttribute="leading" constant="8" id="G6v-Yt-oXh"/>
+                                    <constraint firstItem="gB6-Xb-sv2" firstAttribute="top" secondItem="0oB-NO-2U8" secondAttribute="bottom" constant="8" id="HWU-Ez-j4h"/>
+                                    <constraint firstAttribute="trailing" secondItem="6MO-aK-hgc" secondAttribute="trailing" constant="8" id="Qdo-Wr-CrY"/>
+                                    <constraint firstItem="0oB-NO-2U8" firstAttribute="top" secondItem="onW-ld-bjk" secondAttribute="bottom" constant="8" id="SMg-yt-Uup"/>
+                                    <constraint firstAttribute="trailing" secondItem="onW-ld-bjk" secondAttribute="trailing" constant="8" id="fdC-cS-6ri"/>
+                                    <constraint firstItem="6MO-aK-hgc" firstAttribute="top" secondItem="gB6-Xb-sv2" secondAttribute="bottom" constant="8" id="if7-uI-rli"/>
+                                    <constraint firstItem="onW-ld-bjk" firstAttribute="leading" secondItem="6Cc-FG-uZv" secondAttribute="leading" constant="8" id="nS3-Xf-4NX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Cc-FG-uZv" secondAttribute="trailing" constant="-20" id="3AF-3n-Pzs"/>
+                            <constraint firstItem="xGh-0e-VJf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="7FJ-cl-GBR"/>
+                            <constraint firstItem="6Cc-FG-uZv" firstAttribute="top" secondItem="xGh-0e-VJf" secondAttribute="bottom" constant="-1" id="Iuw-Is-5vP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xGh-0e-VJf" secondAttribute="trailing" constant="-20" id="LfU-gJ-Hbs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Cc-FG-uZv" secondAttribute="bottom" id="OP0-0c-arm"/>
+                            <constraint firstItem="xGh-0e-VJf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="bbe-qy-Zbg"/>
+                            <constraint firstItem="6Cc-FG-uZv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zXr-lG-fQf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblInfo" destination="onW-ld-bjk" id="eZu-kv-8fc"/>
+                        <outlet property="lblResults" destination="6MO-aK-hgc" id="9YR-Hm-gtS"/>
+                        <outlet property="txtFeild" destination="0oB-NO-2U8" id="mT2-Oz-72S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="317"/>
+        </scene>
+    </scenes>
+</document>
